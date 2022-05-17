@@ -1,0 +1,273 @@
+1º
+Algoritmo "Subtração de dois números"
+
+var
+num1, num2: inteiro
+resul: inteiro
+
+início
+
+leia num1, num2
+resul <- num1 - num2
+escreva resul
+
+fim
+
+2ª
+Algoritmo "Divisão de dois números"
+
+var
+num1, num2: inteiro
+resul: inteiro
+
+início
+
+leia num1, num2
+se num2 == 0
+         leia num2
+
+resul <- num 1 / num2
+escreva resul
+
+fim
+
+3º
+Algoritmo "Nota estudande"
+
+var
+num1, num2, num3, real: real
+
+início
+
+leia num1, num2, num3
+resul <- (num1 + num2 + num3) / 3
+escreva resul
+
+fim
+
+4º
+Algoritmo "Preço de produto"
+
+var
+preco, novo_preco: real
+desc: inteiro
+
+início
+
+leia preco, desc
+desc <- (preco * desc) / 100
+novo_preco <- preco - desc
+escreva novo_preco
+
+fim
+
+5º
+Algoritmo "Salário base"
+
+var
+salario, novo_salario: real
+imposto, gratificacao: inteiro
+
+início
+
+leia salario
+imposto <- 7
+gratificacao <- 5
+gratificacao <- (salario * gratificacao) / 100
+imposto <- (salario * imposto) / 100
+novo_salario <- salario + gratificacao
+novo_salario <- novo_salario - imposto
+escreva novo_salario
+
+fim
+
+6º
+Algoritmo "Sálario"
+
+var
+salario, novo_salario:  real
+sn, comissao:  inteiro
+msg: literal
+início
+
+salario <- 1.000
+
+msg <- " Deseja adicionar comissão? 1 - sim 0 - não"
+escreva msg
+leia sn
+se (sn == 1)
+          comissao <- salario * 4 / 100 novo_salario <- salario + comissao escreva novo_salario
+se nao 
+          escreva salario
+
+escreva msg
+leia sn
+
+fim
+
+7º
+Algoritmo "Nota com peso"
+
+var
+nota1, nota2, nota3, media: real
+peso1, peso2, peso3, soma: interio
+
+início
+
+leia nota1, nota2, nota3
+leia peso1, peso2, peso3
+
+media <- (nota1*((real)peso1))+(nota2 *((real)peso2))+(nota3*((real)peso3))
+soma <- peso1+peso2+peso3
+media <- media + soma
+escreva media
+
+fim
+
+8º
+Algoritmo "Área de um triangulo"
+
+var
+area,base,altura: interio
+
+início
+
+leia base, altura
+area <- (base*altura)/2
+
+fim
+
+9º
+Algoritmo "Área de um quadrado"
+
+var
+
+area, lado: inteiro
+
+início
+
+leia lado
+area <- lado*lado
+escreva area
+
+fim
+
+10º
+Algoritmo "Medida em pés"
+
+var
+
+polegadas, pes, jarda, milha, op: real
+msg: literal
+
+início
+
+leia pes
+msg <- "Qual conversão 1- polegadas 2- jardas 3- milhas"
+leia op
+se op == 1
+	pes <- pes * 12.0
+	escreva pes
+senão
+         se op == 2
+	jarda <- (pes * 0.33) + 1
+	escreva jarda
+senão
+	milha <- pes * 0.00018939
+	escreva milha
+
+fim
+
+11º
+Algoritmo "Ano de Nascimento"
+
+var
+
+ano, meses, semanas, dias, ano_atua, ano_nascimento: inteiro
+
+início
+
+leia ano_nascimento, ano_atual
+
+ano <- ano_atual - ano_nascimento
+meses <- ano * 12
+semanas <- ano * 52,1786
+dias <- ano * 3651/4
+
+fim
+
+12º
+Algoritmo "Fábrica de carrro"
+
+var
+
+preco_fabrica, gasto, lucro_distribuidor: real
+lucro, imposto: inteiro
+
+início
+
+leia preco_fabrica, lucro, imposto
+lucro <- preco_fabrica * lucro / 100
+imposto <- preco_fabrica * imposto / 100
+gasto <- preco_frabrica + imposto
+lucro_distribuidor <- lucro - gasto
+preco_final <- preco_fabrica + lucro_distribuidor
+
+fim
+
+13º
+Algoritmo "Salário"
+
+var
+
+salario, salario_bruto, hora_trabalhada, valor_da_hora_trabalhada, salario_final: real
+imposto, registro_hora: inteiro
+msg: literal
+
+início
+
+leia registro_hora, salario
+valor_da_hora_trabalhada <- salario / 10
+
+se registro_hora > 3600
+	salario_bruto <- hora_trabalhada * valor_da_hora_trabalhada
+	imposto <- salario_bruto * 3 / 100
+	salario_final <- salario_bruto - imposto
+	escreva salario_final
+senão
+	msg <- "Hora não completa!"
+	escreva msg
+
+fim
+
+14º
+Algoritmo "Quilowatt"
+
+var
+
+quilowatt, salario_minimo, quatidade_quilowatts, valor_residencia, valor_final: real
+
+início
+
+leia quatidade_quilowatts, salario_minimo
+quilowatts <- salario_minimo / 1/5
+valor_residencia <- quatidade_quilowatts * quilowatts
+valor_final <- valor_residencia * 15 / 100
+escreva valor_final
+
+fim
+
+15º
+Algoritmo "Celsius"
+
+var
+
+cel, fah: real
+
+início
+
+leia cel
+fah <- ((9 * cel) / 5) + 32
+escreva fah
+
+fim
