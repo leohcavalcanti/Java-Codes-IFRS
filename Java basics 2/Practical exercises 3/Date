@@ -1,0 +1,27 @@
+public class Date{
+	public static void main(String[] args){
+		int option = 1, day = 0, month = 0, year = 0;
+
+		switch(option){
+		case 1: System.out.print("Informe o dia: ");
+			day = Integer.parseInt(System.console().readLine());
+			while(day > 31){
+				System.out.print("O dia deve se menor que 31 \nInforme o dia novamente: ");
+				day = Integer.parseInt(System.console().readLine());
+			}
+		case 2: System.out.print("Informe o mes: ");
+			month = Integer.parseInt(System.console().readLine());
+			while(month > 12){
+				System.out.print("O mes deve se menor que 12 \nInforme o mes novamente: ");
+				month = Integer.parseInt(System.console().readLine());
+			}
+		case 3: System.out.print("Informe o ano: ");
+			year = Integer.parseInt(System.console().readLine());
+			while(year > 2022){
+				System.out.print("O ano deve se menor que 2022 \nInforme o ano novamente: ");
+				month = Integer.parseInt(System.console().readLine());
+			}
+		}
+		System.out.println(day+" de "+month+" de "+year);
+	}
+}
